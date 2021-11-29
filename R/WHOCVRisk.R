@@ -57,6 +57,5 @@ WHOCVRisk=function(region,age,gender,smoke,bmi,sbp)
   Ref$fin<-paste(Ref$Region,Ref$Age,Ref$Gender,Ref$Smoke,Ref$BMI,Ref$SBP,sep="")
 
   df$Risk<-Ref$Risk[match(df$fin,Ref$fin)]
-  return(df$Risk)}
-
+  return(df$Risk)
 }
