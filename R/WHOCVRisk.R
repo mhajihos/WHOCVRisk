@@ -2,7 +2,7 @@ WHOCVRisk=function(region,age,gender,smoke,bmi,sbp)
 {
 
 
-Ref=read.csv(file=system.file("extdata", "CVDRisk.cvs", package = "WHOCVRisk"))
+Ref=CVDRisk
 df=data.frame(region,age,gender,smoke,bmi,sbp)
 
 
