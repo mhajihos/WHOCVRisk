@@ -4,7 +4,7 @@ Title: CVD risk assessment tool using revised WHO formula
 Version: 0.1.0
 Author: Morteza Hajihosseini
 Maintainer: TMorteza Hajihosseini <mhajihos@ualberta.ca>
-Description: World Health Organization cardiovascular disease risk charts: revised models based on 21 global regions.
+Description: World Health Organization cardiovascular disease risk revised estimates based on 21 global regions.
 License: WHO European Office for the Prevention and Control of NCDs.
 Encoding: UTF-8
 LazyData: true
