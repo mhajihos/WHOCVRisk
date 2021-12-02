@@ -1,10 +1,10 @@
-WHOCVRisk=function(region,age,gender,smoke,bmi,sbp)
+WHOCVRisk=function(region,age,gender,smoke,sbp,bmi=NULL,dm=NULL,chol=NULL)
 {
 
-
+if(is.null(dm) & is.null(chol) & !is.null(bmi))
+	{
 Ref=CVDRisk
 df=data.frame(region,age,gender,smoke,bmi,sbp)
-
 
 #Age
 df$age2=NA
@@ -50,6 +50,59 @@ SBP<-Ref$SBP[match(df$sbp2,Ref$SBP)]
   Ref$fin<-paste(Ref$Region,Ref$Age,Ref$Gender,Ref$Smoke,Ref$BMI,Ref$SBP,sep="")
 
 df$Risk<-Ref$Risk[match(df$fin,Ref$fin)]
-    return(df$Risk)
+    return(paste0(df$Risk,"%"))
+
+}else if(is.null(bmi)){
+
+Ref=CVDRiskwlab
+df=data.frame(region,age,gender,smoke,sbp,dm,chol)
+
+#Age
+df$age2=NA
+df$age2[df$age>=40 & df$age<=44]<-"40-44"
+df$age2[df$age>=45 & df$age<=49]<-"45-49"
+df$age2[df$age>=50 & df$age<=54]<-"50-54"
+df$age2[df$age>=55 & df$age<=59]<-"55-59"
+df$age2[df$age>=60 & df$age<=64]<-"60-64"
+df$age2[df$age>=65 & df$age<=69]<-"65-69"
+df$age2[df$age>=70 & df$age<=74]<-"70-74"
+
+#SBP
+df$sbp2=NA
+df$sbp2[df$sbp<120]<-"<120"
+df$sbp2[df$sbp>=120 & df$sbp<=139]<-"120-139"
+df$sbp2[df$sbp>=140 & df$sbp<=159]<-"140-159"
+df$sbp2[df$sbp>=160 & df$sbp<=179]<-"160-179"
+df$sbp2[df$sbp>=180]<-">=180"
+
+
+df$chol2=NA
+df$chol2[df$chol<4]<-"<4"
+df$chol2[df$chol>=4 & df$chol<=4.9]<-"4-4.9"
+df$chol2[df$chol>=5 & df$chol<=5.9]<-"5-5.9"
+df$chol2[df$chol>=6 & df$chol<=6.9]<-"6-6.9"
+df$chol2[df$chol>=7]<-">=7"
+
+Var1=c("region","age2","gender","smoke","sbp2","dm","chol2")
+df=df[,Var1]
+
+
+Region<-Ref$Region[match(df$region,Ref$Region)]
+Age<-Ref$Age[match(df$age2,Ref$Age)]
+Gender<-Ref$Gender[match(df$gender,Ref$Gender)]
+Smoke<-Ref$Smoke[match(df$smoke,Ref$Smoke)]
+SBP<-Ref$SBP[match(df$sbp2,Ref$SBP)]
+DM<-Ref$DM[match(df$dm,Ref$DM)]
+CHOL<-Ref$CHOL[match(df$chol2,Ref$CHOL)]
+
+#Create a new variable called luv (look up value)
+  df$fin<-paste(df$region,df$age2,df$gender,df$smoke,df$bmi2,df$sbp2,df$dm,df$chol2,sep="")
+
+#Create a new variable called refv (reference value)
+  Ref$fin<-paste(Ref$Region,Ref$Age,Ref$Gender,Ref$Smoke,Ref$BMI,Ref$SBP,Ref$DM,Ref$CHOL,sep="")
+
+df$Risk<-Ref$Risk[match(df$fin,Ref$fin)]
+    return(paste0(df$Risk,"%"))
+}
 
 }
