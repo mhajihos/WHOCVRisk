@@ -22,5 +22,4 @@
 #' @name CVDRisk
 #' @usage data(CVDRisk)
 #' @format A data frame
-"CVDRisk"
-data(CVDRisk, envir=environment())
+NULL
