@@ -22,4 +22,4 @@
 #' @name CVDRisk
 #' @usage data(CVDRisk)
 #' @format A data frame
-NULL
+"CVDRisk"
