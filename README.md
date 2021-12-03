@@ -1,6 +1,6 @@
 ## WHOCVRisk
 ## Overview
-World Health Organization cardiovascular disease risk tool based on 21 global regions.
+World Health Organization cardiovascular disease risk assessment tool based on 21 global regions.
 
 ## Installation
 ```
