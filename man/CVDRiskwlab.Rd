@@ -3,7 +3,7 @@
 \docType{data}
 \name{CVDRiskwlab}
 \alias{CVDRiskwlab}
-\title{WHOCVRisk with Lab Data}
+\title{CVD Risk Dataset With Lab Data}
 \format{
 A data frame
 }
@@ -12,7 +12,6 @@ data(CVDRiskwlab)
 }
 \description{
 A dataset containing the Region, Age, Diabetes, Gender, Smoke, Cholesterol, SBP, and Risk.
- The variables are as follows:
 }
 \details{
 \itemize{
