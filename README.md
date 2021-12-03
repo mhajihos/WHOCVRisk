@@ -8,7 +8,7 @@ World Health Organization cardiovascular disease risk assessment tool based on 2
 devtools::install_github("mhajihos/WHOCVRisk")
 require(WHOCVRisk)
 
-#Functions
+#Functions and Data
 ?WHOCVRisk
 ?CVDRisk
 ?CVDRiskwlab
