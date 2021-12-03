@@ -1,6 +1,6 @@
 #' WHOCVRisk: Calculating cardiovascular disease risk based on WHO cardiovascular disease risk charts: revised models to estimate risk in 21 global regions.
 #'
-#' Calculating cardiovascular disease risk based on WHO cardiovascular disease risk charts
+#' Calculating cardiovascular disease risk based on WHO cardiovascular disease risk charts.
 #'
 #' @param region Region of residence including Andean Latin America, Australasia, Caribbean, Central Asia, Central Europe,
 #'   Central Latin America, Central Sub-Saharan Africa, East Asia, Eastern Europe, Eastern Sub-Saharan Africa,
