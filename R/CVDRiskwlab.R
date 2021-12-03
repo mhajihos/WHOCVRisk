@@ -1,4 +1,4 @@
-#' WHOCVRisk with Lab Data
+#' CVD Risk Dataset With Lab Data
 #'
 #' A dataset containing the Region, Age, Diabetes, Gender, Smoke, Cholesterol, SBP, and Risk.
 #'  The variables are as follows:
