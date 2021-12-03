@@ -13,8 +13,8 @@
 #'   \item Gender. Gender including "M" Male and "F" Female.
 #'   \item Smoke. Smoke including "Smoker" and "Non-smoker"
 #'   \item Age. Age including age groups: 40-44, 45-49, 50-54, 55-59, 60-64, 65-69, 70-74.
-#'   \item Cholesterol. Total cholesterol in (mmol/l) in  including <20, 20-24, 25-29, 30-35, >=35.
-#'   \item SBP. SBP in (mmHg) including <4, 4-4.9, 5-5.9, 6-6.9, >=7.
+#'   \item Cholesterol. Total cholesterol in (mmol/l) in  including <4, 4-4.9, 5-5.9, 6-6.9, >=7.
+#'   \item SBP. SBP in (mmHg) including <120, 120-139, 140-159, 160-179, >=180.
 #'   \item Risk. orld Health Organization cardiovascular disease risk revised estimates based on 21 global regions.
 #' }
 #'
