@@ -91,7 +91,7 @@ WHOCVRisk=function(region,age,gender,smoke,sbp,bmi=NULL,dm=NULL,chol=NULL)
     
   }else if(is.null(bmi)){
     
-    Ref=CVDRiskwlab
+    Ref=CVDRiskwithlab
     df=data.frame(region,age,gender,smoke,sbp,dm,chol)
     
     #Age
