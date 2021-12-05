@@ -21,6 +21,6 @@
 #' @docType data
 #' @keywords datasets
 #' @name CVDRisk
-#' @usage data(CVDRiskwlab)
+#' @usage data(CVDRiskwithlab)
 #' @format A data frame
 #' @export
