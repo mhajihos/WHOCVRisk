@@ -12,6 +12,7 @@ require(WHOCVRisk)
 ?WHOCVRisk
 ?CVDRisk
 ?CVDRiskwlab
+?WHOCVRisk_Shiny
 
 ```
 ### WHOCVRisk_Shiny:Shiny app for calculating cardiovascular disease risk based on WHO cardiovascular disease risk charts
