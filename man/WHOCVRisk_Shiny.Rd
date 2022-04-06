@@ -9,7 +9,7 @@ WHOCVRisk_Shiny()
 }
 
 \description{
-Lunch a shiny app on the local server for Calculating cardiovascular disease risk
+Lunch a shiny app on the local server for calculating cardiovascular disease risk
 }
 
 \examples{
