@@ -14,3 +14,9 @@ require(WHOCVRisk)
 ?CVDRiskwlab
 
 ```
+### WHOCVRisk_Shiny:Shiny app for calculating cardiovascular disease risk based on WHO cardiovascular disease risk charts
+This function will Lunch a shiny app on the local server for calculating cardiovascular disease risk.
+
+```
+WHOCVRisk_Shiny()
+```
