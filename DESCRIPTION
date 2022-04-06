@@ -8,3 +8,9 @@ Description: World Health Organization cardiovascular disease risk revised estim
 License: WHO European Office for the Prevention and Control of NCDs.
 Encoding: UTF-8
 LazyData: true
+Imports:
+    shinythemes,
+    shiny,
+    gridExtra,
+    data.table,
+    plotly
